@@ -1,5 +1,7 @@
 "use client";
 
+import emailjs from "@emailjs/browser";
+
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
@@ -32,28 +34,37 @@ export default function Contact() {
 
   const onSubmit = async (data: ContactFormData) => {
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "YOUR_WEB3FORMS_ACCESS_KEY",
-          name: data.name,
-          email: data.email,
-          message: data.message,
-          subject: `New Portfolio Message from ${data.name}`,
-        }),
-      });
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-      const result = await response.json();
-      if (result.success) {
+      if (!serviceId || !templateId || !publicKey) {
+        alert("EmailJS is not configured properly. Please check your environment variables.");
+        return;
+      }
+
+      // These keys (from_name, from_email, message) must match the variables in your EmailJS template!
+      const templateParams = {
+        from_name: data.name,
+        from_email: data.email,
+        message: data.message,
+      };
+
+      const response = await emailjs.send(
+        serviceId,
+        templateId,
+        templateParams,
+        {
+          publicKey: publicKey,
+        }
+      );
+
+      if (response.status === 200) {
         setSubmitted(true);
         reset();
         setTimeout(() => setSubmitted(false), 5000);
       } else {
-        alert("Submission failed: " + (result.message || "Unknown error"));
+        alert("Submission failed. Please try again.");
       }
     } catch (error) {
       console.error("Form submission error:", error);
