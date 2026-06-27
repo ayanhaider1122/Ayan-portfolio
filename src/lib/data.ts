@@ -112,6 +112,21 @@ export const projects: Project[] = [
     image: "/medvalidate.png",
   },
   {
+    title: "Astra (Airline Management System)",
+    description:
+      "The ultimate command center for global aviation logistics. Features real-time flight tracking, fleet management, and personnel coordination with a modern dark-themed interface.",
+    tech: ["HTML", "CSS", "JavaScript", "SQL", "PHP"],
+    githubUrl: "https://github.com/ayanhaider1122/Database_Project",
+    image: "/astra.png",
+  },
+  {
+    title: "PakDrive (Car Rental System)",
+    description:
+      "A sleek car rental platform allowing users to find the best-maintained rental fleet in Pakistan. Includes dynamic search filters and comprehensive car details.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "/pakdrive.png",
+  },
+  {
     title: "Zaviyel",
     description:
       "A modern business website built with a clean, responsive, and user-friendly design. Delivers a professional online presence with an optimized user experience.",

@@ -8,7 +8,7 @@ import ServiceCard from "@/components/ui/ServiceCard";
 
 export default function Services() {
   return (
-    <section id="services" className="relative py-24 sm:py-32 bg-[#0a0a0f]">
+    <section id="services" className="relative py-24 sm:py-32 bg-[#030303]">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <SectionHeading
           badge="Services"

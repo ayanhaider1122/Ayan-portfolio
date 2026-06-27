@@ -31,7 +31,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <motion.div
       variants={slideInFromOutside}
-      className="group relative flex flex-col overflow-hidden rounded-[16px] border border-white/[0.07] bg-[#111118] shadow-none transition-all duration-300 hover:-translate-y-2 hover:border-indigo-500/50 hover:bg-[#151520] hover:shadow-[0_20px_60px_rgba(99,102,241,0.15)]"
+      className="group relative flex flex-col overflow-hidden rounded-[16px] border border-white/[0.07] bg-[#09090e] shadow-none transition-all duration-300 hover:-translate-y-2 hover:border-indigo-500/50 hover:bg-[#151520] hover:shadow-[0_20px_60px_rgba(99,102,241,0.15)]"
     >
       {/* Project Image Header - Styled as Premium Browser Window Mockup */}
       {project.image && (
@@ -53,7 +53,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#111118] via-transparent to-transparent opacity-40 pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#09090e] via-transparent to-transparent opacity-40 pointer-events-none" />
         </div>
       )}
 

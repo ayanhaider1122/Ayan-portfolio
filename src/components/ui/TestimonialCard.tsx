@@ -15,7 +15,7 @@ export default function TestimonialCard({
   return (
     <motion.div
       variants={fadeInUp}
-      className="flex min-w-[300px] max-w-[400px] flex-col rounded-[16px] border border-white/[0.07] bg-[#111118] shadow-none p-6 sm:p-8"
+      className="flex min-w-[300px] max-w-[400px] flex-col rounded-[16px] border border-white/[0.07] bg-[#09090e] shadow-none p-6 sm:p-8"
     >
       {/* Quote icon */}
       <div className="mb-4 text-indigo-500/40">

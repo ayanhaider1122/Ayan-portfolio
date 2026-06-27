@@ -4,7 +4,7 @@ import { siteConfig, contactLinks } from "@/lib/data";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/[0.07] bg-[#0a0a0f]">
+    <footer className="border-t border-white/[0.07] bg-[#030303]">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 sm:flex-row lg:px-8">
         <p className="text-sm text-[#64748b]">
           &copy; {new Date().getFullYear()} {siteConfig.brand}. All rights

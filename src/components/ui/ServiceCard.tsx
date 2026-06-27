@@ -12,7 +12,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
   return (
     <motion.div
       variants={fadeInUp}
-      className="group relative flex flex-col rounded-[16px] border border-white/[0.07] bg-[#111118] shadow-none p-6 transition-all duration-300 hover:border-indigo-500/50 hover:bg-[#151520] hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(99,102,241,0.15)] sm:p-8"
+      className="group relative flex flex-col rounded-[16px] border border-white/[0.07] bg-[#09090e] shadow-none p-6 transition-all duration-300 hover:border-indigo-500/50 hover:bg-[#151520] hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(99,102,241,0.15)] sm:p-8"
     >
       {/* Colorful Devicon Tech Logo */}
       <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/[0.03] border border-white/[0.05] p-2.5 mb-2 transition-all duration-300 group-hover:bg-indigo-500/10 group-hover:border-indigo-500/20 group-hover:scale-105">

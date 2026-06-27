@@ -51,7 +51,7 @@ export default function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out",
         scrolled
-          ? "py-2.5 bg-[#0a0a0f]/70 backdrop-blur-xl border-b border-white/[0.07]"
+          ? "py-2.5 bg-[#030303]/70 backdrop-blur-xl border-b border-white/[0.07]"
           : "py-5 bg-transparent border-b border-transparent"
       )}
     >
@@ -122,7 +122,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
-            className="fixed inset-0 z-40 bg-[#0a0a0f]/95 backdrop-blur-xl md:hidden"
+            className="fixed inset-0 z-40 bg-[#030303]/95 backdrop-blur-xl md:hidden"
           >
             <nav className="flex h-full flex-col items-center justify-center gap-8">
               {navLinks.map((link, i) => {

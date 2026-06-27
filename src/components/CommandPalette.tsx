@@ -33,7 +33,7 @@ export default function CommandPalette() {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="max-w-[550px] overflow-hidden p-0 border border-white/[0.07] bg-[#0a0a0f]/95 backdrop-blur-xl shadow-[0_0_50px_rgba(99,102,241,0.15)] text-[#f1f5f9]">
+      <DialogContent className="max-w-[550px] overflow-hidden p-0 border border-white/[0.07] bg-[#030303]/95 backdrop-blur-xl shadow-[0_0_50px_rgba(99,102,241,0.15)] text-[#f1f5f9]">
         <DialogTitle className="sr-only">Command Palette</DialogTitle>
         <DialogDescription className="sr-only">
           Search sections, projects, or common actions.

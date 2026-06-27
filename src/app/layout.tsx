@@ -34,7 +34,7 @@ export default function RootLayout({
       lang="en"
       className={`${geist.variable} ${geistMono.variable} h-full antialiased dark`}
     >
-      <body className="min-h-full bg-[#0a0a0f] text-[#f1f5f9] selection:bg-indigo-500/30 selection:text-white">
+      <body className="min-h-full bg-[#030303] text-[#f1f5f9] selection:bg-indigo-500/30 selection:text-white">
         <TooltipProvider>
           <ScrollProgress />
           <CommandPalette />

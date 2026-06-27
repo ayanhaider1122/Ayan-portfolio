@@ -93,7 +93,7 @@ export default function Contact() {
                     href={link.href}
                     target={link.label !== "Email" ? "_blank" : undefined}
                     rel={link.label !== "Email" ? "noopener noreferrer" : undefined}
-                    className="group flex items-center gap-4 rounded-[16px] border border-white/[0.07] bg-[#111118] p-5 transition-all duration-300 hover:border-indigo-500/50 hover:bg-[#151520] hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(99,102,241,0.15)]"
+                    className="group flex items-center gap-4 rounded-[16px] border border-white/[0.07] bg-[#09090e] p-5 transition-all duration-300 hover:border-indigo-500/50 hover:bg-[#151520] hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(99,102,241,0.15)]"
                   >
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500/10 text-indigo-400 group-hover:bg-indigo-500/20 transition-colors">
                       <Icon width={24} height={24} />
@@ -119,7 +119,7 @@ export default function Contact() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="rounded-[24px] border border-white/[0.07] bg-[#111118] p-8 relative overflow-hidden"
+              className="rounded-[24px] border border-white/[0.07] bg-[#09090e] p-8 relative overflow-hidden"
             >
               {submitted ? (
                 <motion.div
@@ -143,7 +143,7 @@ export default function Contact() {
                     <input
                       type="text"
                       {...register("name")}
-                      className={`w-full rounded-xl border bg-[#0a0a0f] px-4 py-3 text-sm text-[#f1f5f9] placeholder-[#64748b] focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
+                      className={`w-full rounded-xl border bg-[#030303] px-4 py-3 text-sm text-[#f1f5f9] placeholder-[#64748b] focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
                         errors.name ? "border-red-500/50" : "border-white/[0.07]"
                       }`}
                       placeholder="Your name"
@@ -161,7 +161,7 @@ export default function Contact() {
                     <input
                       type="email"
                       {...register("email")}
-                      className={`w-full rounded-xl border bg-[#0a0a0f] px-4 py-3 text-sm text-[#f1f5f9] placeholder-[#64748b] focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
+                      className={`w-full rounded-xl border bg-[#030303] px-4 py-3 text-sm text-[#f1f5f9] placeholder-[#64748b] focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
                         errors.email ? "border-red-500/50" : "border-white/[0.07]"
                       }`}
                       placeholder="you@example.com"
@@ -179,7 +179,7 @@ export default function Contact() {
                     <textarea
                       rows={5}
                       {...register("message")}
-                      className={`w-full rounded-xl border bg-[#0a0a0f] px-4 py-3 text-sm text-[#f1f5f9] placeholder-[#64748b] focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
+                      className={`w-full rounded-xl border bg-[#030303] px-4 py-3 text-sm text-[#f1f5f9] placeholder-[#64748b] focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all ${
                         errors.message ? "border-red-500/50" : "border-white/[0.07]"
                       }`}
                       placeholder="What are we building?"

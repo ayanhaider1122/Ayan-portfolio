@@ -64,7 +64,7 @@ export default function Experience() {
                   className="relative flex gap-6 pb-12 last:pb-0 md:gap-8"
                 >
                   <div className="relative flex flex-col items-center">
-                    <div className="relative z-10 flex h-4 w-4 items-center justify-center rounded-full border-2 border-cyan-500 bg-[#0a0a0f]">
+                    <div className="relative z-10 flex h-4 w-4 items-center justify-center rounded-full border-2 border-cyan-500 bg-[#030303]">
                       <div className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
                     </div>
                     <div className="absolute top-4 h-full w-px bg-gradient-to-b from-cyan-500/40 to-transparent" />

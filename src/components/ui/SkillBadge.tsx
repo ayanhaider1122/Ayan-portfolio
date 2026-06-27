@@ -48,7 +48,7 @@ export default function SkillBadge({ name, deviconName, index }: SkillBadgeProps
     <motion.div
       custom={index}
       variants={scatterVariants}
-      className="group relative flex items-center justify-center gap-3 rounded-[16px] border border-white/[0.07] bg-[#111118] px-4 py-3 shadow-none backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:border-indigo-500/50 hover:bg-[#151520] hover:shadow-[0_20px_60px_rgba(99,102,241,0.15)]"
+      className="group relative flex items-center justify-center gap-3 rounded-[16px] border border-white/[0.07] bg-[#09090e] px-4 py-3 shadow-none backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:border-indigo-500/50 hover:bg-[#151520] hover:shadow-[0_20px_60px_rgba(99,102,241,0.15)]"
     >
       {/* Devicon Logo */}
       {deviconName && (

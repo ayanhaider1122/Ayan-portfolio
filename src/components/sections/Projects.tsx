@@ -8,7 +8,7 @@ import ProjectCard from "@/components/ui/ProjectCard";
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-24 sm:py-32 bg-[#0a0a0f]">
+    <section id="projects" className="relative py-24 sm:py-32 bg-[#030303]">
       {/* Background glow */}
       <div className="absolute top-1/2 left-0 h-[500px] w-[500px] -translate-y-1/2 rounded-full bg-indigo-500/5 blur-[120px] pointer-events-none" />
 

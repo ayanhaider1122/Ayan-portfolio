@@ -26,34 +26,34 @@
 }
 
 :root {
-  --bg-color: #0a0a0f;
+  --bg-color: #030303;
   --fg-color: #f1f5f9;
   --text-muted: #64748b;
-  --surface-color: #111118;
+  --surface-color: #09090e;
   --border-color: rgba(255, 255, 255, 0.07);
-  --primary-color: #6366f1;
-  --accent-color: #22d3ee;
+  --primary-color: #4f46e5;
+  --accent-color: #00e5ff;
 
   --scroll-progress: 0%;
 
-  --background: #0a0a0f;
+  --background: #030303;
   --foreground: #f1f5f9;
-  --card: #111118;
+  --card: #09090e;
   --card-foreground: #f1f5f9;
-  --popover: #0a0a0f;
+  --popover: #030303;
   --popover-foreground: #f1f5f9;
-  --primary: #6366f1;
+  --primary: #4f46e5;
   --primary-foreground: #ffffff;
   --secondary: #1e1b4b;
   --secondary-foreground: #f1f5f9;
-  --muted: #111118;
+  --muted: #09090e;
   --muted-foreground: #64748b;
-  --accent: #111118;
+  --accent: #09090e;
   --accent-foreground: #f1f5f9;
   --destructive: #ef4444;
   --border: rgba(255, 255, 255, 0.07);
   --input: rgba(255, 255, 255, 0.07);
-  --ring: #6366f1;
+  --ring: #4f46e5;
   --radius: 1rem;
 }
 
@@ -100,6 +100,11 @@ code, pre, .font-mono {
   width: var(--scroll-progress);
   z-index: 1000;
   transition: width 0.1s ease-out;
+}
+
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.05);
 }
 
 @layer base {
