@@ -31,12 +31,34 @@ export default function Contact() {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    // Simulate API request
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log("Contact form data submitted:", data);
-    setSubmitted(true);
-    reset();
-    setTimeout(() => setSubmitted(false), 5000);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "YOUR_WEB3FORMS_ACCESS_KEY",
+          name: data.name,
+          email: data.email,
+          message: data.message,
+          subject: `New Portfolio Message from ${data.name}`,
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setSubmitted(true);
+        reset();
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        alert("Submission failed: " + (result.message || "Unknown error"));
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("An error occurred. Please try again later.");
+    }
   };
 
   return (
